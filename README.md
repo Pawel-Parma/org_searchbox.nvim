@@ -21,7 +21,7 @@ With `vim-plug`:
 
 ```vim
 Plug 'MunifTanjim/nui.nvim'
-Plug 'VonHeikemen/searchbox.nvim'
+Plug 'romgrk/searchbox.nvim'
 ```
 
 With `packer`:
