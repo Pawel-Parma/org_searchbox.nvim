@@ -2,11 +2,8 @@
 
 Start your search from a more comfortable place, say the upper right corner?
 
-![Neovim in a terminal, displaying a wonderful searchbox](https://res.cloudinary.com/vonheikemen/image/upload/v1637716458/other/Captura_de_pantalla_de_2021-11-23_21-09-14.png)
+![Search and replace with a multi-step input](./assets/demo.gif)
 
-Here's demo of search and replace component, and also *match_all* search.
-
-[Search and replace with a multi-step input](https://user-images.githubusercontent.com/20980671/143466541-1374ab97-0601-44a5-ab85-dab1ed63ab41.mp4)
 
 ## Getting Started
 
@@ -31,7 +28,7 @@ With `packer`:
 
 ```lua
 use {
-  'VonHeikemen/searchbox.nvim',
+  'romgrk/searchbox.nvim',
   requires = {
     {'MunifTanjim/nui.nvim'}
   }
@@ -364,3 +361,6 @@ If you find this tool useful and want to support my efforts, [buy me a coffee â˜
 [![buy me a coffee](https://res.cloudinary.com/vonheikemen/image/upload/v1618466522/buy-me-coffee_ah0uzh.png)](https://www.buymeacoffee.com/vonheikemen)
 
 
+## Credit
+
+Thanks to [VonHeikemen](https://github.com/VonHeikemen/searchbox.nvim) for the original work.
