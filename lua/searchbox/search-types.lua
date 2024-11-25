@@ -17,8 +17,9 @@ local print_err = function(err)
   vim.notify(msg, vim.log.levels.ERROR)
 end
 
-local highlight_text = function(bufnr, pos)
-  utils.highlight_text(bufnr, utils.hl_name, pos)
+local highlight_text = function(bufnr, pos, hl_name)
+  local hl_name = hl_name or utils.hl_name
+  utils.highlight_text(bufnr, hl_name, pos)
 end
 
 local set_cursor = function(winid, position)
@@ -239,7 +240,8 @@ M.match_all = {
         break
       end
 
-      highlight_text(state.bufnr, pos)
+      local hl_name = i == results.current and utils.hl_name_current or nil
+      highlight_text(state.bufnr, pos, hl_name)
     end
 
     -- move to nearest match
